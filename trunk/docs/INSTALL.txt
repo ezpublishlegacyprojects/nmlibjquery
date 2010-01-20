@@ -1,0 +1,12 @@
+1. Upload and activate extension.
+
+2. If your pagelayout does not automatically include Javascript and CSS files specified in
+JavaScriptSettings > JavaScriptList and StylesheetSettings > CSSFileList in design.ini, put the
+following code between the <head> start and end tags in your pagelayout:
+
+{include uri="design:include_js_and_css.tpl"}
+
+NOTE: This extension is not compatible with the cryptemail
+(http://ez.no/developer/contribs/hacks/cryptemail) extension.
+
+NOTE 2: Sometimes the jquery javascript will be include after other scripts that requires jquery. Solution is to add the files manuell in <head>-tag.
